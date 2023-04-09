@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-info">
+        <div class="main-info">
+          <div class="location" id="location">Oradea</div>
+
+          <div class="second-row">
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather icon"
+              class="w-icon"
+            />
+            <div class="temperature" id="temperature">5 &#8451;</div>
+          </div>
+          <div class="today">(Today)</div>
+          <div class="third-row"></div>
+          <div class="other-info"></div>
+        </div>
+
+        <div class="search" id="search">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" id="cityInput" />
+            <button onclick="GetInfo()" class="search-btn">
+              <img src="images/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
